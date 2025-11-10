@@ -1,0 +1,51 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#f1f2f6;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg3)"/>
+  
+  <!-- Cloud infrastructure -->
+  <ellipse cx="200" cy="80" rx="50" ry="25" fill="url(#cloudGrad)" stroke="#fff" stroke-width="2"/>
+  <ellipse cx="180" cy="90" rx="35" ry="20" fill="url(#cloudGrad)" stroke="#fff" stroke-width="2"/>
+  <ellipse cx="220" cy="90" rx="35" ry="20" fill="url(#cloudGrad)" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Microservices -->
+  <rect x="60" y="140" width="50" height="30" rx="5" fill="#ff6b6b" stroke="#fff" stroke-width="2"/>
+  <rect x="130" y="140" width="50" height="30" rx="5" fill="#4ecdc4" stroke="#fff" stroke-width="2"/>
+  <rect x="200" y="140" width="50" height="30" rx="5" fill="#45b7d1" stroke="#fff" stroke-width="2"/>
+  <rect x="270" y="140" width="50" height="30" rx="5" fill="#f9ca24" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Database -->
+  <ellipse cx="100" cy="220" rx="30" ry="15" fill="#5f27cd" stroke="#fff" stroke-width="2"/>
+  <ellipse cx="200" cy="220" rx="30" ry="15" fill="#5f27cd" stroke="#fff" stroke-width="2"/>
+  <ellipse cx="300" cy="220" rx="30" ry="15" fill="#5f27cd" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Connection lines -->
+  <line x1="200" y1="105" x2="85" y2="140" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="105" x2="155" y2="140" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="105" x2="225" y2="140" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <line x1="200" y1="105" x2="295" y2="140" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  
+  <line x1="85" y1="170" x2="100" y2="205" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <line x1="155" y1="170" x2="200" y2="205" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  <line x1="295" y1="170" x2="300" y2="205" stroke="#fff" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Service labels -->
+  <text x="85" y="160" text-anchor="middle" fill="white" font-size="10" font-family="Arial">API</text>
+  <text x="155" y="160" text-anchor="middle" fill="white" font-size="10" font-family="Arial">AUTH</text>
+  <text x="225" y="160" text-anchor="middle" fill="white" font-size="10" font-family="Arial">DATA</text>
+  <text x="295" y="160" text-anchor="middle" fill="white" font-size="10" font-family="Arial">UI</text>
+  
+  <!-- Title -->
+  <text x="200" y="35" text-anchor="middle" fill="white" font-size="22" font-weight="bold" font-family="Arial">SaaS Architecture</text>
+  <text x="200" y="280" text-anchor="middle" fill="white" font-size="14" font-family="Arial">Scalable • Distributed • Cloud-Native</text>
+</svg>
