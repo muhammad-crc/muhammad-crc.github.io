@@ -653,35 +653,54 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 24px;
   transition: all var(--transition-1);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
   position: relative;
+  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.1), hsla(240, 2%, 20%, 0.3));
+  border: 1.5px solid hsla(45, 100%, 72%, 0.2);
 }
 
 .social-item .social-link::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 8px;
-  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.2), transparent);
+  border-radius: 12px;
+  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.3), transparent);
   opacity: 0;
   transition: opacity var(--transition-1);
   z-index: -1;
 }
 
+.social-item .social-link::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 12px;
+  background: radial-gradient(circle, hsla(45, 100%, 72%, 0.2), transparent 70%);
+  opacity: 0;
+  transition: opacity var(--transition-2);
+  z-index: -2;
+}
+
 .social-item .social-link:hover { 
   color: var(--orange-yellow-crayola);
-  transform: translateY(-4px) scale(1.15);
-  box-shadow: 0 10px 25px hsla(45, 100%, 72%, 0.3);
+  transform: translateY(-6px) scale(1.25);
+  box-shadow: 0 15px 40px hsla(45, 100%, 72%, 0.4), 0 0 20px hsla(45, 100%, 72%, 0.25);
+  border-color: hsla(45, 100%, 72%, 0.6);
+  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.25), hsla(45, 100%, 62%, 0.1));
 }
 
 .social-item .social-link:hover::before {
+  opacity: 1;
+}
+
+.social-item .social-link:hover::after {
   opacity: 1;
 }
 
