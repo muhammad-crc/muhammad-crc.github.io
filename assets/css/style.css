@@ -704,6 +704,52 @@ main {
   opacity: 1;
 }
 
+/* GitHub & Twitter Special Styling */
+.social-item:nth-child(1) .social-link,
+.social-item:nth-child(2) .social-link {
+  font-size: 28px;
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.15), hsla(240, 2%, 15%, 0.4));
+  border: 2px solid hsla(45, 100%, 72%, 0.3);
+  box-shadow: 0 8px 25px hsla(45, 100%, 72%, 0.15), inset 0 1px 0 hsla(255, 255, 255, 0.1);
+}
+
+.social-item:nth-child(1) .social-link::before,
+.social-item:nth-child(2) .social-link::before {
+  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.4), hsla(35, 100%, 62%, 0.2));
+}
+
+.social-item:nth-child(1) .social-link::after,
+.social-item:nth-child(2) .social-link::after {
+  background: radial-gradient(circle, hsla(45, 100%, 72%, 0.3), transparent 60%);
+  box-shadow: 0 0 30px hsla(45, 100%, 72%, 0.2);
+}
+
+.social-item:nth-child(1) .social-link:hover,
+.social-item:nth-child(2) .social-link:hover {
+  font-size: 28px;
+  color: var(--orange-yellow-crayola);
+  transform: translateY(-8px) scale(1.35) rotate(5deg);
+  box-shadow: 0 20px 50px hsla(45, 100%, 72%, 0.5), 0 0 30px hsla(45, 100%, 72%, 0.35), inset 0 1px 0 hsla(255, 255, 255, 0.2);
+  border-color: hsla(45, 100%, 72%, 0.8);
+  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.35), hsla(45, 100%, 62%, 0.2));
+}
+
+.social-item:nth-child(1) .social-link:hover::before,
+.social-item:nth-child(2) .social-link:hover::before {
+  opacity: 1;
+  background: linear-gradient(135deg, hsla(45, 100%, 72%, 0.5), hsla(35, 100%, 62%, 0.3));
+}
+
+.social-item:nth-child(1) .social-link:hover::after,
+.social-item:nth-child(2) .social-link:hover::after {
+  opacity: 1;
+  background: radial-gradient(circle, hsla(45, 100%, 72%, 0.4), transparent 50%);
+  box-shadow: 0 0 40px hsla(45, 100%, 72%, 0.4);
+  transform: scale(1.2);
+}
+
 
 
 
